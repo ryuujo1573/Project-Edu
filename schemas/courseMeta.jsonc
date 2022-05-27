@@ -1,0 +1,40 @@
+{
+    "$id": "https://proj-edu.ryuujo.com/schemas/courseMeta",
+    "type": "object",
+    "properties": {
+        "course": { "type": "number" },
+        "instance": { "type": "string" },
+        "fullname": { "type": "string" },
+        "description": { "type": "string" },
+        "tag": {
+            "enum": ["齐鲁创业讲堂", "社会科学", "创新创业", "艺体审美", "人文学科", "科学技术", "稷下创新讲堂", "通识"]
+        },
+        "point": {
+            "type": "number"
+        },
+        "occurances": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "lecturer": {
+                        "type": "string"
+                    },
+                    "schedule": {
+                        "type": "string"
+                    },
+                    "room":{
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "course",
+        "fullname",
+        "point",
+        "description",
+        "occurances"
+    ]
+}

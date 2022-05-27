@@ -1,0 +1,8 @@
+# hi
+
+**/node_modules/
+
+
+# personal style
+.vscode/
+.markdownlint.json
