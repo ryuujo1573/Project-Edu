@@ -51,3 +51,7 @@ Edu Center - Dashboard | Education Management System
 ## 差异化设计
 
 ## 贡献名单
+
+## 更新日志
+
+["Project-Edu/change.log"](change-log.md)
